@@ -1,43 +1,50 @@
-<html lang="en">
+<html lang="pt-PT">
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="author" content="Rui Viveiros" />
-    <meta name="language" content="english" />
-    <meta name="description" content="Developer Portfolio of Rui Viveiros" />
-    <meta name="title" content="Rui Viveiros | Projects" />
+    <meta name="language" content="portuguese" />
+    <meta name="description" content="Portfólio de Desenvolvedor de Rui Viveiros" />
+    <meta name="title" content="Rui Viveiros | Projetos" />
     <meta name="robots" content="index,follow" />
     <meta name="copyright" content="Copyright 2024 Rui Viveiros" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Rui Viveiros | Projects</title>
+    <title>Rui Viveiros | Projetos</title>
   </head>
   <body>
-    <nav class="nav-flex">
-      <a href="index.html" class="link">About me</a>
-      <a href="projects.html" class="link">Projects</a>
-      <a href="resume.html" class="link">Resumee</a>
-      <a href="contact.html" class="link">Contact</a>
+    <a href="#main-content" class="skip-link">Saltar para conteúdo principal</a>
+
+    <nav class="nav-flex" role="navigation" aria-label="Navegação principal">
+      <a href="index.html" class="link">Sobre mim</a>
+      <a href="projects.html" class="link">Projetos</a>
+      <a href="resume.html" class="link">Currículo</a>
+      <a href="contact.html" class="link">Contacto</a>
       <a href="https://rui-viveiros.vercel.app" class="link">Blog</a>
     </nav>
 
-    <!-- Projects -->
+    <main id="main-content" role="main">
+
+    <!-- Projetos -->
     <div class="accordion">
       <details>
         <summary aria-describedby="accordion">
-          <span role="term">Blog platform</span>
+          <span role="term">Plataforma de Blog</span>
         </summary>
       </details>
 
       <div class="content">
         <p class="inner" role="definition" id="accordion">
-          A fully functional blog platform built using Node.js, Express, and
-          MongoDB, designed to demonstrate core full‑stack development skills.
-          The application allows users to create, read, update, and delete blog
-          posts, with clean routing, server‑side rendering, and a structured
-          MVC‑style architecture.
-          <br />Visit <a href="https://rui-viveiros.vercel.app">here</a>.
+          Uma plataforma de blog totalmente funcional construída usando Node.js, Express e
+          MongoDB, projetada para demonstrar competências essenciais de desenvolvimento full-stack.
+          A aplicação permite aos utilizadores criar, ler, atualizar e eliminar posts de blog,
+          com roteamento limpo, renderização do lado do servidor e uma arquitetura estruturada
+          no estilo MVC.
+          <br />Visite <a href="https://rui-viveiros.vercel.app">aqui</a>.
         </p>
       </div>
     </div>
@@ -45,13 +52,13 @@
     <div class="accordion">
       <details>
         <summary aria-describedby="accordion">
-          <span role="term">Personal Website</span>
+          <span role="term">Website Pessoal</span>
         </summary>
       </details>
 
       <div class="content">
         <p class="inner" role="definition" id="accordion">
-          A my previous single page site made using the Bootstrap framework.
+          O meu site de página única anterior feito usando a framework Bootstrap.
           <video
             src="static/oldwebsite.mp4"
             width="100%"
@@ -65,15 +72,15 @@
     <div class="accordion">
       <details>
         <summary aria-describedby="accordion">
-          <span role="term">Photography Portfolio</span>
+          <span role="term">Portfólio Fotográfico</span>
         </summary>
       </details>
 
       <div class="content">
         <p class="inner" role="definition" id="accordion">
-          A web gallery for some photos I took over the years. The portfolio was
-          made with Tailwind CSS and some JS for animations. You can visit the
-          gallery <a href="https://alanbitts-gallery.netlify.app/">here</a>
+          Uma galeria web com algumas fotos que tirei ao longo dos anos. O portfólio foi
+          feito com Tailwind CSS e um pouco de JavaScript para animações. Pode visitar a
+          galeria <a href="https://alanbitts-gallery.netlify.app/">aqui</a>
         </p>
       </div>
     </div>
@@ -81,16 +88,16 @@
     <div class="accordion">
       <details>
         <summary aria-describedby="accordion">
-          <span role="term">Dealership</span>
+          <span role="term">Concessionária</span>
         </summary>
       </details>
 
       <div class="content">
         <p class="inner" role="definition" id="accordion">
-          This project was made for the capstone project of my final course. It
-      comprises a full-stack web application with a sentiment analyser, two API
-      endpoints for fetching data about the dealerships and the cars in stock
-      and a database for handling user registration.<br>
+          Este projeto foi feito como projeto final do meu último curso. Compreende
+      uma aplicação web full-stack com um analisador de sentimentos, dois endpoints
+      de API para obter dados sobre as concessionárias e os carros em stock
+      e uma base de dados para lidar com o registo de utilizadores.<br>
         </p>
       </div>
     </div>
@@ -101,14 +108,10 @@
           >LinkedIn</a
         >
         <a class="link" href="https://github.com/AlanBitts">GitHub</a>
-        ©️
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        Rui Viveiros
-        <a href="index.html" class="link">back to main</a>
+        <a href="index.html" class="link">voltar ao início</a>
       </nav>
     </footer>
+    <div class="copyright">©️ <script>document.write(new Date().getFullYear())</script> Rui Viveiros</div>
     <script src="js/slideshow.js"></script>
   </body>
 </html>
